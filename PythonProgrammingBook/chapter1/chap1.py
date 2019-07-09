@@ -89,4 +89,4 @@ def calculate():
 calculate()
 
 # Hmmm...right now, all it does is contatenate the numbers as lists.
-# Will have to fix later! 
+# Will have to fix later!
