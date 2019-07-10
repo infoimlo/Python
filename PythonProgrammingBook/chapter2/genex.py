@@ -51,5 +51,43 @@ def testAvg():
     print("Great job!")
 
 # Invoke function
-testAvg()
+#testAvg()
 
+# 4. Modify convert.py program with loop so that it executes 5x before quitting
+
+def convert_tem2():
+    introduction = "The goal of this program is to seamlessless convert degrees Celsius into degrees Fahrenheit."
+    print(introduction)
+
+    # Perform program 5 times
+    for entry in range(5):
+        celsius = eval(input("Enter today's temperature in degrees Celsius: "))
+
+        # Convert c to f
+        fahrenheit = (9/5) * celsius + 32
+
+        print("Today's temperature is approximatly", fahrenheit, "degrees Fahrenheit.")
+
+    # Input statement to give user chance to read results
+    input("Press the Enter key to quit.")
+
+#convert_tem2()
+
+
+# A program to compute the value of an investment carried 10 years into the future
+
+def investment():
+    print("This program calculates the future value of a 10 year investment.")
+
+    # Have user input values for principal & annual interest rate
+    principal = eval(input("Enter the initial principal: "))
+    apr = eval(input("Enter the annual interest rate: "))
+
+    # Loop to calcualte principal
+    for i in range(10):
+        principal = principal * (1 + apr)
+
+    print("The value in 10 years is: ", principal)
+
+# invoke function
+investment()
