@@ -65,3 +65,75 @@ import math
 # 612
 # 812
 # done
+
+# Guess: printing out the number of iterations
+# multiplying each iteration and adding them up
+
+#ans = 0
+#for i in range(1, 11):
+#    ans = ans + i*i
+#    print(i)
+#print(ans)
+
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 385
+
+# What exactly is happening here?
+#print(round(314.159265, -1)) # 310.0
+
+# Operands to integer division as negative
+
+# Programming Exercises
+
+# 1. Program to calculate volume and surface area of sphere from its radius, given an input.
+# volume = 4/3pi*r ** 3
+# I: r (radius)
+# O: print volume
+# P: v = 4/3pi*r ** 3
+
+def volume():
+    import math
+    r = eval(input("Enter the radius: "))
+    v = 4/3 * math.pi * r ** 3
+    print(v)
+
+#volume()
+
+
+# Calculate surface area
+# I: radius
+# O: surface area
+# P: 4 * pi * r ** 2
+
+def surfaceArea():
+    import math
+    r = eval(input("Enter the radius: "))
+    a = 4 * math.pi * r ** 2
+    print(a)
+
+#surfaceArea()
+
+# 2. Program to calculate cost per square inch of circular pizza
+# I: diameter, price
+# O: price * Area
+# P: cost = price * pi* (diameter/2) ** 2
+
+def pizzaCost():
+    import math
+    print("This program calculates the cost per square inch of a circular pizza, given its diameter and price.")
+    # request and store diameter
+    d = eval(input("Enter the diameter: "))
+    p = eval(input("Enter the price for the pizza: "))
+    cost = p * (math.pi * (d / 2) ** 2)
+    print("The cost to produce this pizza is $", round(cost, 2))
+
+pizzaCost()
