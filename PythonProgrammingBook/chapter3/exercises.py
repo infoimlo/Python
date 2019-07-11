@@ -136,4 +136,35 @@ def pizzaCost():
     cost = p * (math.pi * (d / 2) ** 2)
     print("The cost to produce this pizza is $", round(cost, 2))
 
-pizzaCost()
+#pizzaCost()
+
+# 5. Program that calculates cost of an order of coffee
+# I: number of pounds
+# O: cost of order
+# P: 10.50*p + 0.86*p + 1.50
+def coffeeCost():
+    print("This program calculates the cost of an order for the Konditorei Coffe Shop.")
+
+    # get number of pounds
+    p = eval(input("Enter the number of pounds: "))
+    # Calculate cost per order
+    cost = 10.50 * p + 0.86 * p + 1.50
+    print(cost)
+
+#coffeeCost()
+
+# 6. Program that calculates slope of line through two (non-vertical) points entered by user
+# I: y1, y2, x1, x2
+# O: slope
+# P: (y2 - y1)/(x2 - x1)
+
+def calcSlope():
+    print("This program calculates the slope of a line through two (non-vertical points).")
+    print("All that's required is for the user to enter the points. The computer will make the calculations!")
+    x1, x2 = eval(input("Enter the starting x-axis(x1) and the ending x-axis(x2) separated by a comma:"))
+    y1, y2 = eval(input("Enter the starting y-axis(y1) and the ending y-axis(x2) separated by a comma:"))
+    # calculate slope
+    slope = (y2 - y1) / (x2 - x1)
+    print(slope)
+
+#calcSlope()
