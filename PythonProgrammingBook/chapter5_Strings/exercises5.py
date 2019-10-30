@@ -37,9 +37,8 @@ def change():
     print("Your total is: ", total, "cents!")
     #print("The total value of your change is ${0}.{1: 0>2}".format(total//100, total%100)) # seems to produce an error - why?
 
-change()
-
-
+# Invoke function
+# change()
 
 
 
@@ -70,5 +69,19 @@ D = list(range(60, 70))
 #F = list(range())
 
 # Request grade as number
-Request = input("Enter your grade as a number: ")
+def score():
+    numGrade = int(input("Enter your grade as a number: "))
 
+    if numGrade in A:
+        print("Congrats, your grade is an A!")
+    elif numGrade in B:
+        print("Not bad, your grade is a B.")
+    elif numGrade in C:
+        print("Your grade is pretty average as a C.")
+    elif numGrade in D:
+        print("Your grade isn't satisfactory as a D.")
+    else:
+        print("Please try harder. Your grade is an F.")
+
+# Invoke function
+score()
