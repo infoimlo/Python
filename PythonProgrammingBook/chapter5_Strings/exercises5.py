@@ -107,4 +107,14 @@ def score():
 #score()
 
 
-#
+# Question 4: Write a program that allows the user to type in a phrase and then outputs the acronym for that phrase.
+# Note: Acronym should be all uppercase, even if words in phrase are not capitalized.
+# example: Random Access Memory => RAM
+
+# Input: text of variable length
+# Output: first few letters of words capitalized
+# method => .s.capitalize()
+
+# text = sequence of characters
+
+
