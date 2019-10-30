@@ -116,5 +116,26 @@ def score():
 # method => .s.capitalize()
 
 # text = sequence of characters
+# User writes text => function loops through and outputs only the first words => appends it as acryonym
+# Objective find index; captalize non-white spaces
 
+# Storing the output as empty list that will later be appended
+acronym = []
+
+# counter to go in and loop through
+i = 0
+
+i + 5
+
+text = "random access memory"
+#print(len(test)) # 20
+
+#print(test.capitalize()) # Random access memory
+#print(test[0].capitalize(), test[1].capitalize(), test[2].capitalize())
+print(text[0], text[7], text[14]) # ram
+
+# Rather than individually capitalizing everything, create function to do this
+
+for word in text:
+    acronym.append(text.capitalize())
 
