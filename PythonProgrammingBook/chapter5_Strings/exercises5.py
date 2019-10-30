@@ -1,4 +1,4 @@
-# Chapter 5: Programming Exercises
+# Chapter 5: Programming Exercises - pgs 171 - 174
 
 # 1. Redo dateconvert2.py program
 # dateconvert.py
@@ -40,9 +40,29 @@ def change():
 # Invoke function
 # change()
 
-
-
 # Question 2: Write a program that accepts a quiz score as an input and prints out the corresponding grade.
+# input - 1 integer
+# output - 1 letter (text character: A - F)
+# 5-A, 4-B, 3-C, 2-D, 1-F, 0-F
+
+def quizGrade():
+    quiz = int(input("Enter your quiz score as a number: "))
+
+    if quiz is 5:
+        print("Great job! Your letter grade is an A.")
+    elif quiz is 4:
+        print("Not bad...your letter grade is a B.")
+    elif quiz is 3:
+        print("Keep trying...your letter grade is a C.")
+    elif quiz is 2:
+        print("Not satisfactory. Your letter grade is a D.")
+    else:
+        print("Unfortunatly, you failed the quiz.")
+
+# Invoke function
+#quizGrade()
+
+# Question 3: Write a program that accepts an exam score as an input and prints out the corresponding grade.
 # 5 point quizes graded on scale: A: 90 - 100, B: 80 - 89, C: 70 - 79, D: 60 - 69, F: <60
 
 # input: integer (exam score)
@@ -84,4 +104,7 @@ def score():
         print("Please try harder. Your grade is an F.")
 
 # Invoke function
-score()
+#score()
+
+
+#
