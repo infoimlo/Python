@@ -128,14 +128,17 @@ i = 0
 i + 5
 
 text = "random access memory"
+#print(len(text))
 #print(len(test)) # 20
 
 #print(test.capitalize()) # Random access memory
 #print(test[0].capitalize(), test[1].capitalize(), test[2].capitalize())
-print(text[0], text[7], text[14]) # ram
+#print(text[0], text[7], text[14]) # ram
 
 # Rather than individually capitalizing everything, create function to do this
 
 for word in text:
-    acronym.append(text.capitalize())
+    acronym = []
+    print('Test')
+    #print(acronym.append(text.capitalize())) # Why is this printing (None)?
 
