@@ -85,5 +85,12 @@ for i in range(ts_length):
 
 plt.plot(usd_values)
 plt.show()
+
+def x_loop(a):
+    a = 1
+    for i in range(a):
+        a = 2 * x
+    return a
+
     
 
