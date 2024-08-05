@@ -73,7 +73,17 @@ def is_leap(year):
     return values  
     
 
+# https://python-programming.quantecon.org/functions.html 
+ts_length = 100
 
+# empty list 
+usd_values = []   
 
+for i in range(ts_length):
+    usd = np.random.randn()
+    usd_values.append(usd)
+
+plt.plot(usd_values)
+plt.show()
     
 
