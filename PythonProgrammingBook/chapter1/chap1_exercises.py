@@ -92,5 +92,9 @@ def x_loop(a):
         a = 2 * x
     return a
 
-    
+
+ countries = ('', '', '')
+cities = ('', '', '')
+for country, city in zip(countries, cities):
+    print(f'The capital of {country} is {city}')   
 
