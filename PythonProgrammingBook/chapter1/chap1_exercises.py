@@ -36,3 +36,36 @@ def chaotic():
 
 # Invoke function
 chaotic()
+
+import math 
+# Function Definition 
+def function_name(parameters): 
+    "functioninfo"
+    # Define variables: function that returns the average of entered values 
+    num1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    #num2 = [14, 15, 16, 17, 18] 
+
+    a = len(num1)
+    #b = len(num2) 
+
+    average = num1 / a 
+
+    return(average) 
+
+# Run function 
+    parameters() 
+
+# Testing with other variables 
+    testing = [25, 30, 35, 40, 45] 
+
+    
+
+    c = len(testing) 
+
+    averageb = testing/c 
+    
+
+
+
+    
+
